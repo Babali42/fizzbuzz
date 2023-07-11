@@ -3,3 +3,7 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+.vs/
+/.vs/FizzBuzzDotnet/v17/TestStore/0/000.testlog
+/.vs/FizzBuzzDotnet/v17/TestStore/0/testlog.manifest
