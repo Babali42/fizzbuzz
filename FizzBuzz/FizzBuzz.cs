@@ -9,11 +9,14 @@ namespace FizzBuzz
             
         }
         
-        [Test]
-        public void Should()
+        [TestCase(3, true)]
+        [TestCase(5, false)]
+        [TestCase(9, true)]
+        [TestCase(10, false)]
+        public void ShouldBeMultipleOfThree(int value, bool expected)
         {
             //Arrange act
-            Assert.AreEqual(5, 5);
+            Assert.AreEqual(expected, FizzBuzzProd.IsNumberMultipleOfThree(value));
         }
     }
 }
