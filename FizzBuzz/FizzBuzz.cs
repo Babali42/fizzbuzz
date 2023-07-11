@@ -1,9 +1,14 @@
 ﻿using NUnit.Framework;
 
-namespace ConsoleApp1
+namespace FizzBuzz
 {
     public class FizzBuzz
     {
+        public static void Main()
+        {
+            
+        }
+        
         [Test]
         public void Should()
         {
