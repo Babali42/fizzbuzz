@@ -6,14 +6,24 @@ namespace FizzBuzz
     
     public class FizzBuzzProd
     {
-        public void Main()
+        public static void Main()
         {
 
         }
 
         public static bool IsNumberMultipleOfThree(int value)
         {
-            return (value % 3) == 0;
+            return IsNumberMultipleOf(value, 3);
+        }
+
+        private static bool IsNumberMultipleOf(int value, int diviser)
+        {
+            return (value % diviser) == 0;
+        }
+
+        public static bool IsNumberMultipleOfFive(int value)
+        {
+            return IsNumberMultipleOf(value, 5);
         }
 
         public static string Fizzbuzz(int number)
