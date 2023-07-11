@@ -37,11 +37,15 @@ namespace FizzBuzz
             Assert.AreEqual(expected, FizzBuzzProd.IsNumberMultipleOfThreeAndFive(value));
         }
 
-        [Test]
-        public void ShouldOneBeStringOne()
+        [TestCase(3, "Fizz")]
+        [TestCase(5, "Buzz")]
+        [TestCase(7, "7")]
+        [TestCase(10, "Buzz")]
+        [TestCase(15, "FizzBuzz")]
+        public void ShouldOneBeStringOne(int value, string expected)
         {
             //Arrange act
-            Assert.AreEqual(FizzBuzzProd.Fizzbuzz(1), "1");
+            Assert.AreEqual(FizzBuzzProd.Fizzbuzz(value), expected);
         }
     }
 }
