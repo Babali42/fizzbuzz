@@ -6,10 +6,6 @@ namespace FizzBuzz
     
     public class FizzBuzzProd
     {
-        public static void Main()
-        {
-
-        }
 
         public static bool IsNumberMultipleOfThree(int value)
         {
