@@ -24,12 +24,23 @@ namespace FizzBuzz
             //Arrange act
             Assert.AreEqual(expected, FizzBuzzProd.IsNumberMultipleOfFive(value));
         }
-        
-        
+
+
+        [TestCase(3, false)]
+        [TestCase(5, false)]
+        [TestCase(9, false)]
+        [TestCase(10, false)]
+        [TestCase(15, true)]
+        public void ShouldBeMultipleOfThreeAndFive(int value, bool expected)
+        {
+            //Arrange act
+            Assert.AreEqual(expected, FizzBuzzProd.IsNumberMultipleOfThreeAndFive(value));
+        }
 
         [Test]
         public void ShouldOneBeStringOne()
         {
+            //Arrange act
             Assert.AreEqual(FizzBuzzProd.Fizzbuzz(1), "1");
         }
     }

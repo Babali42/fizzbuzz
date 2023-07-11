@@ -6,7 +6,10 @@ namespace FizzBuzz
     
     public class FizzBuzzProd
     {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         public static bool IsNumberMultipleOfThree(int value)
         {
             return IsNumberMultipleOf(value, 3);
@@ -25,6 +28,11 @@ namespace FizzBuzz
         public static string Fizzbuzz(int number)
         {
             return number.ToString();
+        }
+
+        internal static bool IsNumberMultipleOfThreeAndFive(int value)
+        {
+            return IsNumberMultipleOfThree(value) && IsNumberMultipleOfFive(value);
         }
     }
 }
