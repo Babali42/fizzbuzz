@@ -2,13 +2,9 @@
 
 namespace FizzBuzz
 {
+    [TestFixture]
     public class FizzBuzz
     {
-        public static void Main()
-        {
-            
-        }
-        
         [TestCase(3, true)]
         [TestCase(5, false)]
         [TestCase(9, true)]
@@ -17,6 +13,12 @@ namespace FizzBuzz
         {
             //Arrange act
             Assert.AreEqual(expected, FizzBuzzProd.IsNumberMultipleOfThree(value));
+        }
+
+        [Test]
+        public void ShouldOneBeStringOne()
+        {
+            Assert.AreEqual(FizzBuzzProd.Fizzbuzz(1), "1");
         }
     }
 }
