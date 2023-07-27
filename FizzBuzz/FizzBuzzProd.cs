@@ -1,24 +1,18 @@
-﻿using NUnit.Framework;
-using System;
-
-namespace FizzBuzz
+﻿namespace FizzBuzz
 {
-    
     public class FizzBuzzProd
     {
         public static void Main()
         {
-            
-        }
-        public static bool IsNumberMultipleOfThree(int value)
-        {
-            return IsNumberMultipleOf(value, 3);
         }
 
+        public static bool IsNumberMultipleOfThree(int value)
+            => IsNumberMultipleOf(value, 3);
+
+
         private static bool IsNumberMultipleOf(int value, int diviser)
-        {
-            return (value % diviser) == 0;
-        }
+            => value % diviser == 0;
+
 
         public static bool IsNumberMultipleOfFive(int value)
         {
@@ -37,8 +31,6 @@ namespace FizzBuzz
         }
 
         internal static bool IsNumberMultipleOfThreeAndFive(int value)
-        {
-            return IsNumberMultipleOfThree(value) && IsNumberMultipleOfFive(value);
-        }
+            => IsNumberMultipleOfThree(value) && IsNumberMultipleOfFive(value);
     }
 }
